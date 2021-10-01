@@ -1,6 +1,8 @@
 let mapleader=" "
+" let g:molokai_original = 1
 
 syntax on
+syntax enable
 
 set number
 set cursorline
@@ -10,6 +12,9 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set autoindent
+set t_Co=256
+" set term=xterm
 
 map s <nop>
 map S :w<CR>
@@ -22,6 +27,7 @@ inoremap vv <esc>
 
 exec "nohlsearch"
 
+colorscheme molokai
 
 
 " Specify a directory for plugins
