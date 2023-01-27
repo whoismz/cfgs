@@ -14,7 +14,8 @@ plugins=(
 	git
 	colored-man-pages
 	safe-paste
-	
+	sudo
+
 	# non-official
 	zsh-syntax-highlighting
 	zsh-autosuggestions

@@ -1,5 +1,5 @@
-source ~/.gdbinit-gef.py
-# source ~/.../peda/peda.py
+source /home/whoismz/.gdbinit-gef.py
+# source /home/whoismz/Tools/peda/peda.py
 
 set debuginfod enabled on
 
