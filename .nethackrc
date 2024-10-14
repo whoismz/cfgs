@@ -1,15 +1,12 @@
-## Author: whoismz
-## Version: 3.6.6
+## Version: 3.6.7
 
 ## Home Page: https://nethack.org/index.html
 ## Guidebook: https://nethack.org/v366/Guidebook.html
 ## Wiki: https://nethackwiki.com/wiki/Main_Page
 ## Default config file: https://alt.org/nethack/webconf/
 
-## Names
+## Name
 OPTIONS=dogname:Dogmeat
-OPTIONS=catname:Catmeat
-OPTIONS=horsename:Horsemeat
 
 # Enable the curses interface
 #OPTIONS=windowtype:curses
@@ -113,6 +110,3 @@ OPTIONS=hilite_status:characteristics/up/green/down/red
 # gold
 OPTIONS=hilite_status: gold/up/yellow/down/brown
 
-
-## Auto pickup
-AUTOPICKUP_EXCEPTION=">.*"
