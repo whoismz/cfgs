@@ -110,3 +110,6 @@ OPTIONS=hilite_status:characteristics/up/green/down/red
 # gold
 OPTIONS=hilite_status: gold/up/yellow/down/brown
 
+OPTIONS=color
+OPTIONS=force_invmenu
+OPTIONS=msg_window:r
