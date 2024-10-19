@@ -16,7 +16,7 @@ OPTIONS=dogname:Dogmeat
 #OPTIONS=autodig
 
 ## Walking into a door attempts to open it
-#OPTIONS=autoopen
+OPTIONS=autoopen
 
 ## Allow saving and loading bones files.
 #OPTIONS=bones
@@ -41,7 +41,7 @@ OPTIONS=dogname:Dogmeat
 #SYMBOLS=S_ghost:X
 
 ## Sort items by name. One of "none", "loot", or "full"
-#OPTIONS=sortloot:full
+OPTIONS=sortloot:full
 
 ## Require explicit yes for some prompts
 #OPTIONS=paranoid_confirmation:Confirm quit attack pray wand Remove
@@ -53,18 +53,20 @@ OPTIONS=dogname:Dogmeat
 
 ## Colored menus. Regular expressions allowed.
 #
-OPTIONS=menucolors
+OPTIONS=color, menucolors
 MENUCOLOR=" blessed "=green
-MENUCOLOR=" holy "=green
+MENUCOLOR=" holy "=lightblue
 MENUCOLOR=" cursed "=red
+MENUCOLOR=" uncuresd "=cyan
 MENUCOLOR=" unholy "=red
 MENUCOLOR=" cursed .* (being worn)"=orange&underline
+MENUCOLOR=" Amulet of Yendor named"=red&inverse
 
 
 ## Messagetypes
 #
 ## displacing pets. hide the message.
-#MSGTYPE=hide "You swap places with your .*"
+MSGTYPE=hide "You swap places with your .*"
 ## items on floor. don't repeat the message.
 #MSGTYPE=norep "You see here a .*"
 #MSGTYPE=norep "You see here an .*"
@@ -110,6 +112,26 @@ OPTIONS=hilite_status:characteristics/up/green/down/red
 # gold
 OPTIONS=hilite_status: gold/up/yellow/down/brown
 
-OPTIONS=color
+OPTIONS=role:Valkyrie
+OPTIONS=race:dwarf
+OPTIONS=align:lawful
+OPTIONS=gender:female
+
+## Others
+#OPTIONS=windowtype:curses
+#OPTIONS=splash_screen
+#OPTIONS=guicolor
+OPTIONS=perm_invent
+OPTIONS=DECgraphics
+
 OPTIONS=force_invmenu
 OPTIONS=msg_window:r
+OPTIONS=lit_corridor
+OPTIONS=hilite_pet
+OPTIONS=showexp,showscore,time
+
+## Autopickup exception
+autopickup_exception=">.*corpse"
+autopickup_exception=">.*cursed.*"
+autopickup_exception=">.*box"
+autopickup_exception=">.*chest"
