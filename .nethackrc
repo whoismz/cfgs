@@ -57,7 +57,7 @@ OPTIONS=color, menucolors
 MENUCOLOR=" blessed "=green
 MENUCOLOR=" holy "=lightblue
 MENUCOLOR=" cursed "=red
-MENUCOLOR=" uncuresd "=cyan
+MENUCOLOR=" uncuresd "=blue
 MENUCOLOR=" unholy "=red
 MENUCOLOR=" cursed .* (being worn)"=orange&underline
 MENUCOLOR=" Amulet of Yendor named"=red&inverse
@@ -131,6 +131,7 @@ OPTIONS=hilite_pet
 OPTIONS=showexp,showscore,time
 
 ## Autopickup exception
+OPTIONS=autopickup, pickup_types:$?!/="+
 autopickup_exception=">.*corpse"
 autopickup_exception=">.*cursed.*"
 autopickup_exception=">.*box"
