@@ -6,5 +6,6 @@ cp ~/.nethackrc .
 cp ~/.tmux.conf .
 cp ~/.vimrc .
 cp ~/.Xresources .
+cp ~/.xinitrc .
 cp ~/.zshrc .
 

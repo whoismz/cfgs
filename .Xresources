@@ -1,3 +1,2 @@
-! Use a truetype font and size.
-xterm*faceName: Monospace
-xterm*faceSize: 16
+Xcursor.theme: Bibata-Modern-Classic
+
