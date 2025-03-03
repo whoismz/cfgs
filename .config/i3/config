@@ -204,6 +204,14 @@ exec --no-startup-id xrandr --output HDMI-0 --mode 2560x1440 --rate 144
 #ibus
 exec ibus-daemon -rxRd
 
+#DISPLAY
+exec_always --no-startup-id dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+exec --no-startup-id $HOME/scripts/start-xdg-portal.sh
+
+exec --no-startup-id /usr/lib/xdg-desktop-portal -r
+exec --no-startup-id /usr/lib/xdg-desktop-portal-gtk -r
+
 # window rules
 hide_edge_borders smart
 gaps inner 10
